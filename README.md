@@ -20,3 +20,7 @@ eval_model=classifier.evaluate(x_test, y_test)
 
 ## PCA - Principal Component Analysis
 [Source Paper](https://arxiv.org/pdf/1404.1100.pdf)
+*PCA provides a roadmap for how to reduce a complex data set to a lower dimension to reveal the sometimes hidden, simplified structures that often underlie it.*
+- PCA is intimately related to Singular Value Decomposition(SVD)
+- The goal of principal component analysis is to identify the most meaningful basis to re-express a data set.
+
