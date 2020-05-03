@@ -60,6 +60,29 @@ ax.grid()
 # This should be ideally >85% to ensure significant information is not lost
 pca.explained_variance_ratio_
 ```
+### PCA for dimensionality reduction
+```python
+# Scale data
+from sklearn.preprocessing import StandardScaler
+scaler = StandardScaler()
+train_img = scaler.fit_transform(train_img)
+test_img = scaler.transform(test_img)
+
+from sklearn.decomposition import PCA
+# This creates an PCA instance which find the minimum number of components
+# that will retain 95% of the variance/information from given dataset
+pca = PCA(.95)
+
+# Fit only on train
+pca.fit(train_img)
+
+# Transform both train and test
+train_img = pca.transform(train_img)
+test_img = pca.transform(test_img)
+
+# Find the number of principal components selected
+pca.n_components_
+```
 
 
 
