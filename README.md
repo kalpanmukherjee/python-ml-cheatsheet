@@ -85,7 +85,7 @@ test_img = pca.transform(test_img)
 pca.n_components_
 ```
 ## SVM - Support Vector Machines
-[Video](https://www.youtube.com/watch?v=efR1C6CvhmE), [Article](https://datafai.com/2018/08/10/support-vector-machine-svm/)
+[Video](https://www.youtube.com/watch?v=efR1C6CvhmE), [Article](https://datafai.com/2018/08/10/support-vector-machine-svm/)</br>
 Two kernels are generally used:
 - [The Polynomial Kernel](https://www.youtube.com/watch?v=Toet3EiSFcM) : Increases the low dimensional data to a **relatively higher dimension**
 - [The Radial Basis Kernel (RBF)](https://www.youtube.com/watch?v=Qc5IyLW_hns) : Increases the low dimensional data to an **infinite dimension**</br>
