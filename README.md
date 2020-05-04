@@ -84,6 +84,11 @@ test_img = pca.transform(test_img)
 # Find the number of principal components selected
 pca.n_components_
 ```
+## SVM - Support Vector Machines
+[Video](https://www.youtube.com/watch?v=efR1C6CvhmE)
+Two kernels are generally used:
+- The Polynomial Kernel : Increases the low dimensional data to a **relatively higher dimension**
+- The Radial Basis Kernel (RBF) : Increases the low dimensional data to an **infinite dimension**
 
 
 
