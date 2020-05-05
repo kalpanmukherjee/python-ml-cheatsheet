@@ -87,13 +87,13 @@ pca.n_components_
 ```
 ## SVM - Support Vector Machines
 [Video](https://www.youtube.com/watch?v=efR1C6CvhmE), [Article](https://datafai.com/2018/08/10/support-vector-machine-svm/)</br>
-Two kernels are generally used:
-- [The Polynomial Kernel](https://www.youtube.com/watch?v=Toet3EiSFcM) : Increases the low dimensional data to a **relatively higher dimension**
-- [The Radial Basis Kernel (RBF)](https://www.youtube.com/watch?v=Qc5IyLW_hns) : Increases the low dimensional data to an **infinite dimension**</br>
 *The objective of a SVM is to find the optimal separating hyperplane which maximises the separation between classes.*
 If the original data is not linearly separatable then a *kernel trick* or *kernel transformation* is made to convert the data into a higher dimension to make it linearly separatable.
 *If multiple hyperplanes are available, the best one is the one that maximizes the distance between the classes.*
-If an SVM is used for classification, it’s called **Support Vector Classifier (SVC)**. Similarly, for regression it’s called **Support Vector Regressor (SVR)**.
+If an SVM is used for classification, it’s called **Support Vector Classifier (SVC)**. Similarly, for regression it’s called **Support Vector Regressor (SVR)**.</br>
+Two kernels are generally used:
+- [The Polynomial Kernel](https://www.youtube.com/watch?v=Toet3EiSFcM) : Increases the low dimensional data to a **relatively higher dimension**
+- [The Radial Basis Kernel (RBF)](https://www.youtube.com/watch?v=Qc5IyLW_hns) : Increases the low dimensional data to an **infinite dimension**</br>
 Suitable use cases:
 - Sparse data
 - High Dimensional data
