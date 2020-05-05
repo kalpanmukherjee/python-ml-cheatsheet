@@ -24,6 +24,7 @@ eval_model=classifier.evaluate(x_test, y_test)
 *PCA provides a roadmap for how to reduce a complex data set to a lower dimension to reveal the sometimes hidden, simplified structures that often underlie it.*
 - PCA is intimately related to Singular Value Decomposition(SVD)
 - The goal of principal component analysis is to identify the most meaningful basis to re-express a data set.
+
 ### PCA for data visualisation
 ```python
 from sklearn.decomposition import PCA
@@ -89,7 +90,36 @@ pca.n_components_
 Two kernels are generally used:
 - [The Polynomial Kernel](https://www.youtube.com/watch?v=Toet3EiSFcM) : Increases the low dimensional data to a **relatively higher dimension**
 - [The Radial Basis Kernel (RBF)](https://www.youtube.com/watch?v=Qc5IyLW_hns) : Increases the low dimensional data to an **infinite dimension**</br>
-*The objective of a SVM is to find the optimal separating hyperplane.*
+*The objective of a SVM is to find the optimal separating hyperplane which maximises the separation between classes.*
+If the original data is not linearly separatable then a *kernel trick* or *kernel transformation* is made to convert the data into a higher dimension to make it linearly separatable.
+*If multiple hyperplanes are available, the best one is the one that maximizes the distance between the classes.*
+If an SVM is used for classification, it’s called **Support Vector Classifier (SVC)**. Similarly, for regression it’s called **Support Vector Regressor (SVR)**.
+Suitable use cases:
+- Sparse data
+- High Dimensional data
+- Text Classification
+- Data is nonlinear
+- Image classification
+- Data has complex patterns
+### SVC - Suppor Vector Classifier
+[docs](https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html)
+```python
+from sklearn.svm import SVC
+SVM = SVC(kernel='rbf', random_state=0, gamma=.10, C=1.0)
+SVM.fit(X_train_standard, y_train)
+
+print('Accuracy of our SVM model on the training data is {:.2f} out of 1'.format(SVM.score(X_train_standard, y_train)))
+print('Accuracy of our SVM model on the test data is {:.2f} out of 1'.format(SVM.score(X_test_standard, y_test)))
+```
+### SVR - Support Vector Regressor
+[docs](https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVR.html)
+```python
+from sklearn.svm import SVR
+regressor = SVR(kernel = 'rbf')
+regressor.fit(X, y)
+
+y_pred = regressor.predict(x_test)
+```
 
 
 
