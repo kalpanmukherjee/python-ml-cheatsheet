@@ -94,7 +94,6 @@ If an SVM is used for classification, it’s called **Support Vector Classifier 
 Two kernels are generally used:
 - [The Polynomial Kernel](https://www.youtube.com/watch?v=Toet3EiSFcM) : Increases the low dimensional data to a **relatively higher dimension**
 - [The Radial Basis Kernel (RBF)](https://www.youtube.com/watch?v=Qc5IyLW_hns) : Increases the low dimensional data to an **infinite dimension**</br>
-</br>
 Suitable use cases:
 - Sparse data
 - High Dimensional data
