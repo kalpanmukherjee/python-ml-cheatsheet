@@ -120,7 +120,13 @@ regressor.fit(X, y)
 
 y_pred = regressor.predict(x_test)
 ```
-
+## Bias & Variance
+[video](https://www.youtube.com/watch?v=EuBBz3bI-aA) </br>
+*In ML, the ideal algorithm has **low bias** and can accurately model the true relationship and it has **low variability**, by producing consistent predictions across different datasets.*
+Commonly used methods for finding the correct model with acceptably low bias and variance are:
+- Regularisation
+- Boosting
+- Bagging
 
 
 
